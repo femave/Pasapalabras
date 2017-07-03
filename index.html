@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="bigcircle">
+      <div id="letter" class="midlecircle">
+        <span class="circle circle1">A <div class="hidden"></div></span>
+        <span class="circle circle2">B<div class="hidden"></div></span>
+        <span class="circle circle3">C<div class="hidden"></div></span>
+        <span class="circle circle4">D<div class="hidden"></div></span>
+        <span class="circle circle5">E<div class="hidden"></div></span>
+        <span class="circle circle6">F<div class="hidden"></div></span>
+        <span class="circle circle7">G<div class="hidden"></div></span>
+        <span class="circle circle8">H<div class="hidden"></div></span>
+        <span class="circle circle9">I<div class="hidden"></div></span>
+        <span class="circle circle10">J<div class="hidden"></div></span>
+        <span class="circle circle12">L<div class="hidden"></div></span>
+        <span class="circle circle13">M<div class="hidden"></div></span>
+        <span class="circle circle14">N<div class="hidden"></div></span>
+        <span class="circle circle15">Ñ<div class="hidden"></div></span>
+        <span class="circle circle16">O<div class="hidden"></div></span>
+        <span class="circle circle17">P<div class="hidden"></div></span>
+        <span class="circle circle18">Q<div class="hidden"></div></span>
+        <span class="circle circle19">R<div class="hidden"></div></span>
+        <span class="circle circle20">S<div class="hidden"></div></span>
+        <span class="circle circle21">T<div class="hidden"></div></span>
+        <span class="circle circle22">U<div class="hidden"></div></span>
+        <span class="circle circle23">V<div class="hidden"></div></span>
+        <span class="circle circle25">X<div class="hidden"></div></span>
+        <span class="circle circle26">Y<div class="hidden"></div></span>
+        <span class="circle circle27">Z<div class="hidden"></div></span>
+    </div>
+    <div class="insidecircle">
+
+      <div class="question">
+        <p id="question1">Welcome to pasapalabras</p>
+      </div>
+      <div class="answer">
+        <input id="answer1"  class ="inputanswer" onkeypress="validar(event)" placeholder="Introduce la respuesta" type="text">
+      </div>
+      <input id="buttons2" class ="butmargin" onclick="countdown()" type="button" name="" value="Start">
+      <input id="buttons" class ="butmargin hidden" onclick="submit()" type="button" name="" value="Submit">
+      <input id="buttons1" class ="butmargin hidden" onclick="pasapalabra()" type="button" name="" value="Pasapalabra">
+      <input id="buttons3" class ="butmargin hidden" onclick="stop()" type="button" name="" value="Stop play">
+      <input id="buttons4" class ="butmargin hidden" onclick="score()" type="button" name="" value="Play again!">
+    </div>
+    <div class="timer">
+      <p id="timer2">130</p>
+    </div>
+    <div class="letterleft">
+      <p id="letterleft1">0</p>
+    </div>
+
+<div class="modalpos">
+  <button id="myBtn" class="butmargin big">Score</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Player Score</h3>
+    <ul id ="list">
+
+    </ul>
+  </div>
+</div>
+</div>
+<aside class="right">
+  <h3>Tips</h3>
+  <p>* If you have a correct or wrong answer, you can pass the mouse trought the letter to know the solution.</p>
+  <p>* Every time you play again pasapalabras will change the questions.</p>
+</aside>
+
+  <script src="app/app.js"></script>
+  </body>
+
+</html>
